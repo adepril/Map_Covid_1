@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from datetime import datetime
 
 app = Flask(__name__)
@@ -15,11 +15,12 @@ def hello():
 @app.route("/map")
 def map():
     date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    html = str(date) + """
-    <br>
-    TODO: Carte mondiale du Covid-19
-    """
-    return html
+    # html = str(date) + 
+    # <br>
+    # TODO: Carte mondiale du Covid-19
+    # 
+    # return html
+    return render_template("map.html")
 
 if __name__ == "__main__":
     app.run()
