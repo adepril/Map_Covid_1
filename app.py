@@ -15,10 +15,7 @@ def hello():
 @app.route("/map")
 def map():
     # date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    # html = str(date) + 
-    # <br>
-    # TODO: Carte mondiale du Covid-19
-    # 
+    # html = str(date) + "<br> TODO: Carte mondiale du Covid-19"
     # return html
     return render_template("map.html")
 
