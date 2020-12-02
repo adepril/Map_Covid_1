@@ -14,7 +14,7 @@ def hello():
 
 @app.route("/map")
 def map():
-    date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    # date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     # html = str(date) + 
     # <br>
     # TODO: Carte mondiale du Covid-19
